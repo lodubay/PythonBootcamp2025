@@ -4,4 +4,4 @@
 *.pdf 
 *.sublime-workspace 
 *.sublime-project 
-
+*.DS_STORE
