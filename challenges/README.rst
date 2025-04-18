@@ -9,7 +9,7 @@ code for the 2025 SURP Python Bootcamp.
 
 **Day 2** Morse decoder
 
-**Day 3** TBD
+**Day 3** FITS files
 
 **Day 4** Deck of cards (part 1)
 
