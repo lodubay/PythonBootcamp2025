@@ -35,9 +35,9 @@ def main():
         next_player = players[(turn + 1) % nplayers]
         opponents = [p for p in players if p.order != order]
         # 0. if out of cards, draw a card (if any cards remain in the deck)
-        if len(p.hand.cards) == 0:
+        if p.hand.size == 0:
             print('You are out of cards.')
-            if len(drawpile.cards) > 0:
+            if drawpile.size > 0:
                 print('Drawing 1.')
                 p.hand.single_draw(drawpile)
             else:
@@ -47,7 +47,7 @@ def main():
         # Summarize other player info
         print('\nOpponents:')
         for p2 in opponents:
-            print(f'\t{p2.name} has {len(p2.hand.cards)} cards in hand and {p2.score} book(s).')
+            print(f'\t{p2.name} has {p2.hand.size} cards in hand and {p2.score} book(s).')
         # 1. choose a card to request and another player to request from
         # List of valid cards to request
         valid_requests = list(set([c.value for c in p.hand.cards]))
@@ -66,13 +66,13 @@ def main():
         # 2. ask that player if they have any cards of a particular rank
         card_request = p.request_card(p2, fishval)
         # 3a. if yes, other player hands over all cards of that rank. go again.
-        # 3b. if no, "go fish!" and player draws a card. 
         if card_request:
             print('Go again!')
             time.sleep(1)
+        # 3b. if no, "go fish!" and player draws a card. 
         else:
             time.sleep(1)
-            if len(drawpile.cards) > 0:
+            if drawpile.size > 0:
                 p.hand.single_draw(drawpile)
                 card_drawn = p.hand.cards[-1]
                 print('You drew:', card_drawn)
@@ -121,9 +121,9 @@ class Player:
     deck : cards.deck instance
         The deck of playing cards from which the player draws.
     order : int
-        Player turn order. Cannot be changed.
+        Player turn order, zero-indexed. Cannot be changed.
     name : str, optional
-        Player name. If none is given, defaults to "playerN", where N = order.
+        Player name. If none is given, defaults to "player<order+1>".
     handsize : int, optional
         Starting size of the player's hand.
     
@@ -188,7 +188,7 @@ class Player:
             matching_cards = []
             # while loop to avoid skipping indices
             i = 0
-            while i < len(other.hand.cards):
+            while i < other.hand.size:
                 if other.hand.cards[i].value == value:
                     matching_cards.append(other.hand.cards[i])
                     other.give_card(self, i)

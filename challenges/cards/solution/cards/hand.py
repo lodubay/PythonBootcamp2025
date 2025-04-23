@@ -22,7 +22,7 @@ class hand:
 	----------
 	cards : list 
 		The card objects currently in the hand 
-	n : int 
+	size : int 
 		The number of cards in the hand 
 
 	.. note:: This object is indexible and is compatible with the len() 
