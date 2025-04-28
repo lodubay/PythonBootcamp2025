@@ -6,6 +6,7 @@ scalefile = Path('dragonscale.txt')
 if lockfile.exists():
     print(
 """
+You reach a large stone tower at the top of a hill. Its isolation is perplexing.
 Gazing at the top of the tower, you spy a glint of gold and a flash of a wing.
 The dragon! It looks down at you and speaks:
 
