@@ -11,7 +11,7 @@ fragments before you decode them. Good luck!
 
 Details - Morse code is a character-encoding scheme that allows operators to
 send messages using a series of electrical pulses represented as short or long
-pulses, dots, and dashes. It was inveted by Samuel F. B. Morse.
+pulses, a.k.a. dots and dashes. It was invented by Samuel F. B. Morse.
 
 Hint: We recommend starting by implementing the following mapping as a
 dictionary.
@@ -66,4 +66,4 @@ Punctuation
 (	-.--.
 )	-.--.-
 &	.-...
--   -....-
+-	-....-
