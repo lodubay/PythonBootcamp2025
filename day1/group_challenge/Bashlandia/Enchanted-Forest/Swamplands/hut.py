@@ -40,6 +40,9 @@ the cauldron and the hut have vanished without a trace.
 A small scrap of paper lies on the ground in front of you, its edges charred.
 As you read its inscription, you hear a faint cackling echoing around the
 clearing - or maybe it's just the wind...
+
+Hint: use the "less" command to print the contents of the file. Hit "Q" to
+exit when finished.
 """
                 )
                 with open(clue, 'w') as f:
@@ -105,5 +108,8 @@ ingredients three: the scale of a gold dragon, the cap of a fiery mushroom,
 and a gemstone of precisely 85 bytes. Bring these to me, and I will help you."
 
 You blink, and the witch vanishes. The cauldron bubbles merrily.
+
+Hint: explore the enchanted forest to find the three items. Once you find one,
+use mv to move it into the Cauldron directory.
 """
     )
