@@ -1,5 +1,5 @@
 
-Challenge Problem: A Deck of Cards 
+Challenge Problem: A Deck of Cards (Part 2)
 
 This challenge problem serves as a "final exam" of sorts for this bootcamp. 
 Correct solutions to this problem will make use of a combination of both 
@@ -15,8 +15,9 @@ suits (clubs, diamonds, hearts, and spades) of which there are thirteen cards
 with different face values (2 through 10 (inclusive), Jack, Queen, King, and 
 Ace). 
 
-You are to create a python package named "cards". Create the following files, 
-and fill them with code according to the instructions that follow: 
+In Part 2, you are to create a python package named "cards". Create the 
+following files, and fill them with code according to the instructions that 
+follow: 
 
 cards/__init__.py 
 cards/card.py 
@@ -24,17 +25,8 @@ cards/hand.py
 cards/deck.py 
 cards/played.py 
 
-Within the cards/card.py file, you are to implement a playing card object. 
-This should have attributes named 'value', 'suit', and 'royal'. 'value' must 
-be an integer denoting the face value of the card; 'suit' must be a 
-single-character string denoting which suit the card is in; 'royal' must be a 
-boolean describing whether or not the card is royal (this is the 10, Jack, 
-Queen, King, and Ace). This object must have a string representation which 
-prints the rank of the card and its suit. For example, the Jack of hearts 
-should print as "Jack of hearts" and the three of diamonds as "3 of 
-diamonds". Implement numeric comparison for <, <=, ==, !=, >=, and > between 
-cards based on their rank. Here the Ace should have high rank (that is, an 
-Ace should be considered greater than all other values). 
+Within the cards/card.py file, place the source code for the 'card' class
+that you wrote yesterday in Part 1. 
 
 Within the cards/hand.py file, you are to implement a hand of playing cards. 
 This class should make use of composition by storing a list of card objects 
@@ -87,6 +79,8 @@ cards.hand.fromdeck [classmethod] : draw a number of cards from a deck and
 	obtain a hand object containing them 
 cards.deck : the deck object 
 cards.played : the discard pile object 
+
+I will test your deck of cards in a friendly game of Go Fish!
 
 Hint: In implementing shuffling of the deck, I recommend making use of the 
 random.shuffle function in the python standard library. To remove items from 

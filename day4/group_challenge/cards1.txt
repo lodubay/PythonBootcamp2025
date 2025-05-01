@@ -1,0 +1,37 @@
+
+Group Challenge: A Deck of Cards (Part 1)
+
+This challenge problem serves as a "final exam" of sorts for this bootcamp. 
+Correct solutions to this problem will make use of a combination of both 
+inheritance and composition within a miniature python package, combining most 
+of the material that is new to the target audience at the beginning. 
+While difficult, this problem does not require an exhaustive amount of code 
+when solved with the proper techniques. The included solution - counting all 
+of the comments, docstrings, and whitespace - is 478 lines. 
+
+In this exercise you will implement a standard 52-card playing card deck (we 
+will omit the jokers for simplicity). Recall that a playing card deck has four 
+suits (clubs, diamonds, hearts, and spades) of which there are thirteen cards 
+with different face values (2 through 10 (inclusive), Jack, Queen, King, and 
+Ace). 
+
+In Part 1, you are to create a playing card class. 
+This should have attributes named 'value', 'suit', and 'royal'. 'value' must 
+be an integer denoting the face value of the card; 'suit' must be a 
+single-character string denoting which suit the card is in; 'royal' must be a 
+boolean describing whether or not the card is royal (this is the 10, Jack, 
+Queen, King, and Ace). This object must have a string representation which 
+prints the rank of the card and its suit. For example, the Jack of hearts 
+should print as "Jack of hearts" and the three of diamonds as "3 of 
+diamonds". Implement numeric comparison for <, <=, ==, !=, >=, and > between 
+cards based on their rank. Here the Ace should have high rank (that is, an 
+Ace should be considered greater than all other values).
+
+Bonus (not required): Write docstrings for this class and all of 
+its properties and functions (this isn't necessary for some magic methods if 
+the functionality is obvious). 
+
+If you finish Part 1 early, head over to the day5 folder and get a head start
+on Part 2!
+
+
