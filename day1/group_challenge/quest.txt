@@ -1,16 +1,14 @@
-My good wizard! I write to you with ill tidings, for a terrible calamity
-has befallen my kingdom. My magic parrot has gone missing! 
+Challenge: Terminal Quest
 
-As you know, my parrot has for years maintained an aura of frivolity and
-good cheer throughout my kingdom. Each year at the Festival of the Parrot,
-the people would sing and dance throughout the night. But on the eve of this
-year's festival, I discovered that my parrot had gone missing! The festival
-was cancelled, and my people have become depressed. My talented jesters and 
-musicians have failed to elicit even a single laugh or dance move.
+Today you will be practicing your terminal skills with a fun quest! Using only
+the terminal, enter the magical world of Bashlandia. You will find a message 
+waiting for you from King Tux which will tell you what you are seeking. 
 
-Now in desperation I turn to you. As one of the most powerful wizards in the
-land, I believe that only you can find my magic parrot and bring him back home.
-Please help me, for you are my only hope.
+Navigate through the world using the terminal, completing the tasks along the 
+way as you find them. Anytime you come across a .py file, run it with
 
-Yours faithfully,
-King Tux
+$ python <filename>.py
+
+Note you may have to run the file again after you complete the task it contains!
+Each task will involve a specific terminal command - consult the cheat sheet
+to find the one that's appropriate.
