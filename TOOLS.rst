@@ -21,18 +21,20 @@ bootcamp.
 
 	You're welcome to use whichever text editor or IDE you please for this 
 	bootcamp. If you do not have one or don't have a preference in the matter, 
-	my personal favorite is `Sublime Text`__. 
+	my personal favorite is `VSCode`__. 
 
 __ spyder_ 
 __ anaconda_ 
 __ pycharm_ 
 __ idle_ 
 __ sublime_ 
+__ vscode_
 .. _spyder: https://www.spyder-ide.org/ 
 .. _anaconda: https://www.anaconda.com/ 
 .. _pycharm: https://www.jetbrains.com/pycharm/ 
 .. _idle: https://docs.python.org/3/library/idle.html 
-.. _sublime: https://www.sublimetext.com/ 
+.. _sublime: https://www.sublimetext.com/
+.. _vscode: https://code.visualstudio.com/ 
 
 
 
