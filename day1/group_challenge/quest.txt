@@ -12,3 +12,7 @@ $ python <filename>.py
 Note you may have to run the file again after you complete the task it contains!
 Each task will involve a specific terminal command - consult the cheat sheet
 to find the one that's appropriate.
+
+To begin: move into the Bashlandia directory with cd, then read the contents
+of message.txt using the "less" command. You can remind yourself of where you
+are in the file structure using "pwd" (print working directory).
