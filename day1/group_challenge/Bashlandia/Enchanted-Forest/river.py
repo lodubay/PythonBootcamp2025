@@ -31,7 +31,7 @@ Hint: move all the text files into the Boat directory.
 else:
     # Hide directories
     for path in paths:
-        if not Path(path).is_dir():
+        if Path(path).is_dir():
             os.rename(path, '.%s' % path)
     for fname in belongings:
         # Set up files
@@ -46,6 +46,7 @@ unacceptable! Fortunately you are a powerful wizard who can conjure a suitable
 boat with a wave of your staff.
 
 Make a directory called "Boat" and move all of your belongings into it.
+Then, rerun this script.
 """
     )
     

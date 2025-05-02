@@ -1,7 +1,7 @@
 from pathlib import Path
 import os
 
-circle = Path('faerie_circle.txt')
+circle = Path('.circle')
 flamecap = Path('flamecap.txt')
 evils = ['flamecap1.evil', 'flamecap2.evil', 'flamecap3.evil', 
          'flamecap4.evil', 'flamecap5.evil', 'flamecap6.evil']
