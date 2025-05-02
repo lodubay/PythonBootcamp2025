@@ -9,7 +9,7 @@ way as you find them. Anytime you come across a .py file, run it with
 
 $ python <filename>.py
 
-Note you may have to run the file again after you complete the task it contains!
+Note you may have to run some scripts multiple times!
 Each task will involve a specific terminal command - consult the cheat sheet
 to find the one that's appropriate.
 
