@@ -7,7 +7,13 @@ gemstones = ['gemstone1.txt', 'gemstone2.txt', 'gemstone3.txt', 'gemstone4.txt',
 if torch.is_file():
     # Reveal gemstone files
     for g in gemstones:
-        os.rename('.%s' % g, g)
+        if not Path(g).is_file():
+            # Copy gemstone files
+            with open(Path('.Gemstones/%s' % g), 'r') as f:
+                content = f.read()
+            with open(Path(g), 'w') as f:
+                f.write(content)
+            # os.rename('.%s' % g, g)
     print(
 """
 Under the light of your torch, five gemstones glitter against the dark walls
@@ -23,7 +29,8 @@ else:
     if all([g in os.listdir() for g in gemstones]):
         # Hide gemstone files
         for g in gemstones:
-            os.rename(g, '.%s' % g)
+            if Path(g).is_file():
+                os.remove(g)
     print(
 """
 You turn a corner and are greeted with pitch darkness. You can't even see your

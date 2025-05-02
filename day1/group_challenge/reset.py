@@ -4,13 +4,6 @@ This script resets the terminal quest to its initial state.
 import os
 from pathlib import Path
 
-SECRET_GEMSTONE = """  .     '     ,
-    _________
- _ /_|_____|_\\ _
-   '. \\   / .'
-     '.\\ /.'
-       '.'"""
-
 def main():
     confirm = input(
 """
@@ -26,11 +19,6 @@ def reset_game():
         'Bashlandia/Enchanted-Forest/Downstream/': 'Bashlandia/Enchanted-Forest/.Downstream/',
         'Bashlandia/Enchanted-Forest/Upstream/': 'Bashlandia/Enchanted-Forest/.Upstream/',
         'Bashlandia/Enchanted-Forest/.Upstream/Mine/Cavern/': 'Bashlandia/Enchanted-Forest/.Upstream/Mine/.Cavern/',
-        'Bashlandia/Enchanted-Forest/.Upstream/Mine/.Cavern/gemstone1.txt': 'Bashlandia/Enchanted-Forest/.Upstream/Mine/.Cavern/.gemstone1.txt',
-        'Bashlandia/Enchanted-Forest/.Upstream/Mine/.Cavern/gemstone2.txt': 'Bashlandia/Enchanted-Forest/.Upstream/Mine/.Cavern/.gemstone2.txt',
-        'Bashlandia/Enchanted-Forest/.Upstream/Mine/.Cavern/gemstone3.txt': 'Bashlandia/Enchanted-Forest/.Upstream/Mine/.Cavern/.gemstone3.txt',
-        'Bashlandia/Enchanted-Forest/.Upstream/Mine/.Cavern/gemstone4.txt': 'Bashlandia/Enchanted-Forest/.Upstream/Mine/.Cavern/.gemstone4.txt',
-        'Bashlandia/Enchanted-Forest/.Upstream/Mine/.Cavern/gemstone5.txt': 'Bashlandia/Enchanted-Forest/.Upstream/Mine/.Cavern/.gemstone5.txt',
     }
     files_to_remove = [
         'Bashlandia/Enchanted-Forest/staff.txt',
@@ -40,6 +28,11 @@ def reset_game():
         'Bashlandia/Enchanted-Forest/.Upstream/Tower/dragonscale.txt',
         'Bashlandia/Enchanted-Forest/.Upstream/Mine/echo.txt',
         'Bashlandia/Enchanted-Forest/.Upstream/Mine/.Cavern/torch.txt',
+        'Bashlandia/Enchanted-Forest/.Upstream/Mine/.Cavern/gemstone1.txt',
+        'Bashlandia/Enchanted-Forest/.Upstream/Mine/.Cavern/gemstone2.txt',
+        'Bashlandia/Enchanted-Forest/.Upstream/Mine/.Cavern/gemstone3.txt',
+        'Bashlandia/Enchanted-Forest/.Upstream/Mine/.Cavern/gemstone4.txt',
+        'Bashlandia/Enchanted-Forest/.Upstream/Mine/.Cavern/gemstone5.txt',
         'Bashlandia/Enchanted-Forest/.Downstream/Meadow/flamecap1.evil',
         'Bashlandia/Enchanted-Forest/.Downstream/Meadow/flamecap2.evil',
         'Bashlandia/Enchanted-Forest/.Downstream/Meadow/flamecap3.evil',
@@ -48,7 +41,8 @@ def reset_game():
         'Bashlandia/Enchanted-Forest/.Downstream/Meadow/flamecap6.evil',
         'Bashlandia/Enchanted-Forest/.Downstream/Meadow/flamecap.txt',
         'Bashlandia/Enchanted-Forest/.Downstream/Swamplands/clue.txt',
-        'Bashlandia/.Secret-Island/call_parrot.sh'
+        'Bashlandia/.Secret-Island/call_parrot.sh',
+        'Bashlandia/.Secret-Island/.rick'
     ]
     dirs_to_remove = [
         'Bashlandia/Enchanted-Forest/Boat/',
@@ -75,13 +69,6 @@ def reset_game():
         if not Path(f).is_file():
             with open(Path(f), 'w') as file:
                 file.write('')
-    
-    # Make gemstone4
-    gemstone = Path('Bashlandia/Enchanted-Forest/.Upstream/Mine/.Cavern/.gemstone4.txt')
-    if not gemstone.is_file() or not os.path.getsize(gemstone) == 85:
-        with open(gemstone, 'w') as f:
-            f.write(SECRET_GEMSTONE)
-            f.close()
 
 
 if __name__ == '__main__':

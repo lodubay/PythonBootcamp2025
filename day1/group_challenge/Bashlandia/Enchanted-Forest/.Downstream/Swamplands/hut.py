@@ -6,26 +6,26 @@ ingredients = ['dragonscale', 'flamecap', 'gemstone4']
 gemstone = cauldron / ('%s.txt' % ingredients[-1])
 clue = Path('clue.txt')
 
-if cauldron.is_dir():
-    if any([g in os.listdir(cauldron) for g in ['gemstone1.txt', 'gemstone2.txt', 'gemstone3.txt', 'gemstone5.txt']]):
-        # Player has provided the wrong gemstone
-        print(
+if clue.is_file():
+    # Witch has already given the clue
+    print(
+"""
+Try as you might, you cannot find the clearing where you encountered the
+witch before. Something tells you this isn't the last you've seen of her...
+"""
+    )
+else:
+    if cauldron.is_dir():
+        if any([g in os.listdir(cauldron) for g in ['gemstone1.txt', 'gemstone2.txt', 'gemstone3.txt', 'gemstone5.txt']]):
+            # Player has provided the wrong gemstone
+            print(
 """
 The cauldron bubbles intensely for a moment. Suddenly, the gemstone you tossed
 in comes hurtling back out toward you. It smacks you in the forehead. Seems
 like you found the wrong stone!
 """
-        )
-    elif all([(cauldron / ('%s.txt' % i)).is_file() for i in ingredients]):
-        if clue.is_file():
-            # Witch has already given the clue
-            print(
-"""
-Try as you might, you cannot find the clearing where you encountered the
-witch before. Something tells you this isn't the last you've seen of her...
-"""
             )
-        else:
+        elif all([(cauldron / ('%s.txt' % i)).is_file() for i in ingredients]):
             if len(os.listdir(cauldron)) == len(ingredients):
                 # Player has found all the ingredients, witch will give the clue
                 print(
@@ -41,7 +41,7 @@ A small scrap of paper lies on the ground in front of you, its edges charred.
 As you read its inscription, you hear a faint cackling echoing around the
 clearing - or maybe it's just the wind...
 
-Hint: use the "less" command to print the contents of the file. Hit "Q" to
+Hint: use the "less" command to print the contents of the clue file. Hit "Q" to
 exit when finished.
 """
                 )
@@ -73,22 +73,22 @@ brew could be catastrophic! You must discard the extra items before I allow
 you to pass."
 
 Hint: there can only be 3 files within the Cauldron directory. Make sure you
-only include the gemstone file that is 8 bytes in size.
+only include the gemstone file that is 85 bytes in size.
 """
                 )
-    else:
-        # Player hasn't found all the ingredients yet
-        print(
+        else:
+            # Player hasn't found all the ingredients yet
+            print(
 """
 You return to the hut, but there is no sign of the witch. It seems she will
 only return once you gather the dragon scale, mushroom cap, and gemstone
 (of exactly 85 bytes) and deposit them in the cauldron.
 """
-        )
-else:
-    # First time encountering the witch
-    os.mkdir(cauldron)
-    print(
+            )
+    else:
+        # First time encountering the witch
+        os.mkdir(cauldron)
+        print(
 """
 In a small clearing, you come across a small wooden hut. Smoke rises from the
 chimney. Outside the hut, an old woman sits in a rocking chair. Next to her,
@@ -112,4 +112,4 @@ You blink, and the witch vanishes. The cauldron bubbles merrily.
 Hint: explore the enchanted forest to find the three items. Once you find one,
 use mv to move it into the Cauldron directory.
 """
-    )
+        )
