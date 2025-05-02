@@ -15,8 +15,8 @@ if boat.is_dir():
 """
 Congratulations, you have solved my river puzzle!
 
-Once you cross to the other side, you can either follow the river upstream
-or downstream. The choice is yours.
+Once you cross to the other side, you can either follow the river upstream, 
+into the hills, or downstream, into the riverlands. The choice is yours.
 """
         )
     else:

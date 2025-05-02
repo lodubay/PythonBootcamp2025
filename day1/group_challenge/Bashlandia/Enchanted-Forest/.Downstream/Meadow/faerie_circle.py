@@ -9,6 +9,9 @@ evils = ['flamecap1.evil', 'flamecap2.evil', 'flamecap3.evil',
 if circle.is_file():
     print(
 """
+You come across a meadow full of tall grasses and flowers. At its center, you
+spot a near-perfect circle of mushrooms with red-orange caps - a Faerie Circle.
+
 You approach the circle of mushrooms carefully, keen on finding a suitable
 flamecap to harvest. But suddenly, your foot catches on a gnarled root
 and you stumble headlong into the faerie circle!

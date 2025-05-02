@@ -6,9 +6,9 @@ scalefile = Path('dragonscale.txt')
 if lockfile.exists():
     print(
 """
-You reach a large stone tower at the top of a hill. Its isolation is perplexing.
-Gazing at the top of the tower, you spy a glint of gold and a flash of a wing.
-The dragon! It looks down at you and speaks:
+You reach a large, isolated stone tower at the top of a hill. Gazing at the 
+top of the tower, you spy a glint of gold and a flash of a wing. A dragon! 
+It looks down at you and speaks:
 
 "My hero! I have been imprisoned in this tower by the evil Princess.
 Please, help me escape and you will have my gratitude! Her magic runes keep
@@ -16,7 +16,8 @@ me imprisoned, but a powerful mage such as yourself should have no trouble
 countering her spells."
     
 Remove the runes.lock file to free the dragon. Then rerun this file.
-    """)
+"""
+    )
 elif not scalefile.exists():
     with open(scalefile, 'w') as f:
         f.write('')
