@@ -56,10 +56,10 @@ def reset_game():
 
     for f, newf in files_to_rename.items():
         if Path(f).exists():
-            os.rename(f, newf)
+            os.rename(Path(f), Path(newf))
     for f in files_to_remove:
         if Path(f).is_file():
-            os.remove(f)
+            os.remove(Path(f))
     for d in dirs_to_remove:
         if Path(d).is_dir():
             for f in os.listdir(d):
