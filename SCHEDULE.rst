@@ -50,6 +50,9 @@ Tuesday, May 6, 2025
 Wednesday, May 7, 2025
 ----------------------
 
+* Pull repository updates
+	- Demonstrate git commit and git pull
+
 * Demonstration: Reading Documentation
 	- Example with NumPy
 
