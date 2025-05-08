@@ -72,6 +72,11 @@ Wednesday, May 7, 2025
 Thursday, May 8, 2025
 ---------------------
 
+* Slides: Basic Principles of Software Engineering 
+	- DRY: Don't Repeat Yourself 
+	- No ifs, ands, or buts 
+	- Version Control 
+
 * Notebook: Object Oriented Programming 1
 	- Properties and setter functions 
 	- Class methods and static methods 
@@ -93,11 +98,6 @@ Friday, May 9, 2025
 	- Importing code in the same directory 
 	- The ``__init__.py`` file 
 	- The usefulness of your PYTHONPATH 
-
-* Slides: Basic Principles of Software Engineering 
-	- DRY: Don't Repeat Yourself 
-	- No ifs, ands, or buts 
-	- Version Control 
 
 * Notebook: Object Oriented Programming 2
 	- Inheritance and Composition 
