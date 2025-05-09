@@ -99,11 +99,9 @@ Friday, May 9, 2025
 	- The ``__init__.py`` file 
 	- The usefulness of your PYTHONPATH 
 
-* Notebook: Object Oriented Programming 2
+* Object Oriented Programming 2
 	- Inheritance and Composition 
 
 * Slides for reference
 	- Inheritance and composition
 	- Multiple inheritance (bonus)
-
-this is a change
