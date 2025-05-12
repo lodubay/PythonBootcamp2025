@@ -16,8 +16,11 @@ If you're participating in this bootcamp, check out the `required materials`__
 and the schedule_. 
 
 __ materials_ 
-.. _materials: https://github.com/giganano/PythonBootcamp/blob/main/TOOLS.rst
-.. _schedule: https://github.com/giganano/PythonBootcamp/blob/main/SCHEDULE.rst
+.. _materials: https://github.com/lodubay/PythonBootcamp2025/blob/main/TOOLS.rst
+.. _schedule: https://github.com/lodubay/PythonBootcamp2025/blob/main/SCHEDULE.rst
+
+The solutions for the Morse Code decoder and deck of cards are available at:
+https://github.com/lodubay/PythonBootcampSolutions
 
 
 The following are some extra useful resources for those learning python: 
